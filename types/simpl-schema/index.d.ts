@@ -41,7 +41,7 @@ interface CustomValidationContext {
      * (non-generic schema key) as the only argument. The return object will
      * have isSet, value, and operator properties for that field.
      */
-    field(): any;
+    field(name?: string): any;
     /**
      * Use this method to get information about other fields that have the same
      * parent object. Works the same way as field(). This is helpful when you use
